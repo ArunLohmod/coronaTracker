@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/corona-icon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     
+
+</head>
+<body>
+    
+
+   <!-- -------------------------------   navbar---------------------- -->
+ {{>navbar}}
+
+
+   <!-- main body -->
+   
+   <div class="container-fluid main_body">
+    <div class="row">
+      <div class="col-md-10 col-12 mx-auto"> 
+
+
+        <h1 id="heading">Let's Stay safe and <br> fight against COR<span ><img src="images/corona-icon.svg" alt="" width="3%" id="heading_img"></span>NA</h1>
+      
+        <input type="text" class="input" placeholder="Enter Country Name">
+        <button onclick="getData()">GetData</button>
+         
+        <div class="info">
+
+            <div class="country-name">
+               <h3>Country</h3>
+                   <p id="cnt-name">---</p>
+            </div>
+
+            <div class="new-confirmed">
+              <h3>New Confirmed</h3>
+                  <p id="new_con">---</p>
+           </div>
+
+           <div class="tot-case">
+            <h3>Total Confirmed</h3>
+                <p id="tot_case">---</p>
+         </div>
+
+         <div class="new-rec">
+          <h3>New Recovered</h3>
+              <p id="new_rec">---</p>
+       </div>
+
+       <div class="tot-rec">
+        <h3>Total Recovered</h3>
+            <p id="tot_rec">---</p>
+     </div>
+
+     <div class="new-death">
+      <h3>New Death</h3>
+          <p id="new_death">---</p>
+   </div>
+
+       <div class="tot-death">
+        <h3>Total Death</h3>
+            <p id="tot_death">---</p>
+     </div>
+
+        </div>
+
+     
+
+        </div>
+        </div>
+        </div>
+        
+
+    
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+   <script src="js/index.js"></script>
+</body>
+</html>
+
